@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Under Renovation</title>
+  <style>
+    body {
+      background-color: #A7383A;
+      color: #ffffff;
+      margin: 0;
+    }
+    h1 {
+      font-family: "Adobe Garamond Pro"
+    }
+    .site {
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+    }
+    .center-content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .main {
+      width:100vw;
+      max-width:350px;
+    }
+    .links {
+      display:flex;
+      align-items:baseline;
+    }
+    .icon {
+      width:40px;
+      padding:12px;
+    }
+    .logo {
+      width:70px;
+    }
+    .renovation {
+      margin: 0 12px;
+    }
+    .jk {
+      animation: ease-out breathe 30s infinite;
+      background-image: url("assets/Wiggles.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      width: 100vw;
+    }
+    @keyframes breathe {
+      0% {
+        background-position-y: 0;
+      }
+      25% {
+        background-position-y: 2vh;
+      }
+      75% {
+        background-position-y: -2vh;
+      }
+      100% {
+        background-position-y: -.000001px;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <div class="site center-content">
+    <div class="main">
+      <div class="links">
+        <img class="icon logo" src="assets/fernlogo.svg">
+        </a>
+        <a href="https://www.instagram.com/hihellofern/">
+          <img class="icon" src="assets/social/instagram.svg">
+        </a>
+        <a href="https://dribbble.com/hihellofern">
+          <img class="icon" src="assets/social/dribble.svg">
+        <a href="https://twitter.com/hihellofern">
+          <img class="icon" src="assets/social/twitter.svg">
+        </a>
+        <a href="https://www.linkedin.com/in/fernroath/">
+          <img class="icon" src="assets/social/linkdin.svg">
+        </a>
+      </div>
+      <img class="renovation" src="assets/UnderRen.svg">
+    </div>
+  </div>
+
+  <div class="jk">
+  </div>
+
+  <script>
+    wiggle1 = "assets/wiggle1.svg"
+    wiggle2 = "assets/wiggle2.svg"
+    wiggle3 = "assets/wiggle3.svg"
+    wiggle4 = "assets/wiggle4.svg"
+
+    randomNumber = Math.random()
+    if (randomNumber <= .25) {
+      chosenWiggle = wiggle1
+    } else if (randomNumber <= .5) {
+      chosenWiggle = wiggle2
+    } else if (randomNumber <= .75) {
+      chosenWiggle = wiggle3
+    } else if (randomNumber <= 1) {
+      chosenWiggle = wiggle4
+    }
+    // imageElement = document.createElement("img")
+    // imageElement.src = chosenWiggle
+    // document.querySelector(".jk").appendChild(imageElement)
+    document.querySelector(".jk").style["background-image"] = `url("${chosenWiggle}")`
+  </script>
+</body>
+</html>
