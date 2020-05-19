@@ -73,7 +73,7 @@ two.bind('update', frame => {
 two.play()
 
 const setBackgroundFillColor = () => {
-  const paneIndex = Math.round(
+  const paneIndex = Math.floor(
     document.scrollingElement.scrollTop /
       document.scrollingElement.clientHeight,
   )
