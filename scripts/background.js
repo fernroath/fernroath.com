@@ -47,10 +47,10 @@ const curve = two.makeCurve(
   true,
 )
 curve.linewidth = 0
+curve.fill = 'var(--background)'
 
 const setFill = index => {
   const nextPane = projectBackgrounds[index % projectCount]
-  curve.fill = nextPane[1]
   projectBackgrounds.forEach(bgClass => elem.classList.remove(bgClass[0]))
   elem.classList.add(nextPane[0])
 }

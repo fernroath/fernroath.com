@@ -78,7 +78,12 @@ body {
   left: 100%;
   position: absolute;
   top: 0;
+  transition: background 400ms ease-in-out;
   width: 300%;
+}
+
+#background path {
+  transition: fill 400ms ease-in-out;
 }
 
 .pane--nav {
@@ -358,6 +363,7 @@ body,
 
   .project-images {
     grid-area: images;
+    max-width: 691px;
   }
 
   .project-image.half {
