@@ -1,5 +1,10 @@
 /* Minimal reset */
 
+a, a:link {
+  outline: 0;
+  text-decoration: none;
+}
+
 button {
   appearance: none;
   background: transparent;
@@ -257,13 +262,6 @@ body,
 
 /* Components */
 
-.icon-map {
-  height: 0;
-  overflow: hidden;
-  position: fixed;
-  width: 0;
-}
-
 .icon,
 .icon-flipped {
   width: 55px;
@@ -305,6 +303,14 @@ body,
   border: 3px solid var(--background);
   border-left: 0;
   color: inherit;
+}
+
+.hero-image--wrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  width: 100%;
 }
 
 .hero-image {
