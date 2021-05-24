@@ -1,0 +1,158 @@
+/*plain css document*/
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0;
+  min-height: 100vh;
+}
+p {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+nav {
+  background: #fff;
+  border-bottom: 7px solid #ffb047;
+  flex-grow: 0;
+  position: sticky;
+  top: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+a:focus {
+  color: #ffb047;
+}
+main {
+  max-width: 100%;
+  overflow: hidden;
+}
+.rectangle {
+  width: 35px;
+  height: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #ffb047;
+}
+.box {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.viewport {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar,
+.image-grid {
+  margin: 30px 0 10px 0;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-nav {
+  flex-grow: 1;
+  margin-bottom: 50px;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 25px;
+}
+
+.project-title {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.client {
+  padding: 5px 0 0 0;
+  color: #0600bb;
+}
+
+.description {
+  font-family: Roboto Slab, serif;
+  padding: 20px 0 0 0;
+}
+
+.email {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.icon {
+  width: 45px;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background: #ffb047;
+  display: block;
+  padding: 20px 25px;
+  width: 60px;
+}
+.logo:hover,
+.logo:focus {
+  color: #fff;
+}
+.nav-link {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+@media (min-width: 900px) {
+  main {
+    display: flex;
+    flex-grow: 1;
+  }
+  .viewport {
+    height: 100vh;
+  }
+  .box {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .sidebar,
+  .image-grid {
+    margin: 60px 0 35px 0;
+  }
+  .image-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .logo {
+    padding: 30px 15px;
+    width: 75px;
+  }
+  .image-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
