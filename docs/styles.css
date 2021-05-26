@@ -27,6 +27,10 @@ a:hover,
 a:focus {
   color: #ffb047;
 }
+/*::selection {
+  color: blue;
+  background: red;
+}*/
 main {
   max-width: 100%;
   overflow: hidden;
@@ -38,9 +42,14 @@ main {
   margin-bottom: 10px;
   background: #ffb047;
 }
+
 .box {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.contact {
+  padding-bottom: 40px;
 }
 
 .viewport {
@@ -79,6 +88,10 @@ main {
   font-weight: 700;
 }
 
+.title-pad {
+  padding-top: 20px;
+}
+
 .client {
   padding: 5px 0 0 0;
   color: #0600bb;
@@ -102,8 +115,12 @@ main {
 }
 
 .row {
-  align-items: center;
   display: flex;
+  gap: 20px;
+}
+
+.nav-row {
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -117,11 +134,26 @@ main {
 .logo:focus {
   color: #fff;
 }
-.nav-link {
-  margin-left: 20px;
-  margin-top: 5px;
-}
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+.projects {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  margin: 30px 0;
+}
+.projects-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-card {
+  display: block;
+  width: 100%;
+}
 @media (min-width: 900px) {
   main {
     display: flex;
@@ -140,6 +172,9 @@ main {
   }
   .image-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .projects-row {
+    flex-direction: row;
   }
 }
 
