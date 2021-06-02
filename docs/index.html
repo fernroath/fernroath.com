@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="fun-cursor">
     <svg
       style="height: 0; overflow: hidden; position: fixed; width: 0"
       version="1.1"
@@ -47,7 +47,7 @@
       </defs>
     </svg>
     <div class="viewport">
-      <nav class="row box nav-row">
+      <nav class="row box row--nav">
         <a href="https://fernroath.com" class="btn">
           <svg class="logo" viewBox="0 0 300 300">
             <use xlink:href="#fern" />
@@ -66,52 +66,56 @@
           </a>
         </div>
       </nav>
-      <main class="gallery">
+      <main class="row--gallery">
         <div class="box projects">
           <div class="projects-row">
-            <a href="https://calmcact.us" class="project-card">
-              <img src="/assets/hero/calmcactushero.png" />
-              <p class="project-title title-pad">Calm Cactus Goods</p>
-              <p class="client">calmcact.us</p>
-              <p class="description">Coming Soon</p>
+            <!--  <a href="" class="card">
+              <img src="/assets/hero/placeholderhero.png" />
+              <p class="card--title card--titlepad">Another Project</p>
+              <p class="card--client">Another Client</p>
+              <p class="card--description">YYYY</p>
+            </a> -->
+            <a href="https://calmcact.us" class="card">
+              <img class="card--image" src="/assets/hero/calmcactushero.png" />
+              <p class="card--title">Calm Cactus Goods</p>
+              <p class="card--client">calmcact.us</p>
+              <p class="card--description">Coming Soon 2020</p>
             </a>
-            <a href="https://fernroath.com/illustration" class="project-card">
-              <img src="/assets/hero/illustrationhero.png" />
-              <p class="project-title title-pad">Illustration</p>
-              <p class="client">Personal</p>
-              <p class="description">Always a WIP</p>
+            <a href="https://fernroath.com/illustration" class="card">
+              <img class="card--image" src="/assets/hero/illustrationhero.png" />
+              <p class="card--title">Illustration</p>
+              <p class="card--client">Personal Study</p>
+              <p class="card--description">Ongoing</p>
             </a>
-            <a href="" class="project-card">
-              <img src="/assets/hero/frchero.png" />
-              <p class="project-title title-pad">Forza Racing Championship</p>
-              <p class="client">Microsoft's Turn 10 Studios</p>
-              <p class="description">2019</p>
+            <a href="" class="card">
+              <img class="card--image" src="/assets/hero/frchero.png" />
+              <p class="card--title">
+                Forza Racing Championship
+              </p>
+              <p class="card--client">Microsoft's Turn 10 Studios</p>
+              <p class="card--description">2019</p>
             </a>
-            <a href="" class="project-card">
-              <img src="/assets/hero/wotcguildhero.png" />
-              <p class="project-title title-pad">Magic: the Gathering Guild Week</p>
-              <p class="client">Wizards of the Coast</p>
-              <p class="description">2018</p>
-            </a>
-            <a href="" class="project-card">
-              <img src="/assets/hero/wotcguildhero.png" />
-              <p class="project-title title-pad">Another Project</p>
-              <p class="client">Another Client</p>
-              <p class="description">YYYY</p>
+            <a href="" class="card">
+              <img class="card--image" src="/assets/hero/wotcguildhero.png" />
+              <p class="card--title">
+                Magic: the Gathering Guild Week
+              </p>
+              <p class="card--client">Wizards of the Coast</p>
+              <p class="card--description">2018</p>
             </a>
           </div>
         </div>
 
-        <div class="box contact">
+        <div class="box card--contact">
           <div class="rectangle"></div>
           <div>
-            <p class="bold">Say Hello</p>
-            <p class="email">
+            <p class="card--bold">Say Hello</p>
+            <p class="card--email">
               <a href="mailto:me@fernroath.com" target="_blank">
                 me@fernroath.com
               </a>
             </p>
-            <p class="bold">Full Resume</p>
+            <p class="card--bold">Full Resume</p>
           </div>
         </div>
       </main>
