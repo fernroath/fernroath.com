@@ -10,11 +10,12 @@ p {
   margin: 0;
 }
 img {
+  display:block;
   max-width: 100%;
 }
 nav {
   background: #fff;
-  border-bottom: 7px solid #B1C8E3;
+  border-bottom: 7px solid var(--accent-color);
   flex-grow: 0;
   position: sticky;
   top: 0;
@@ -25,12 +26,35 @@ a {
 }
 a:hover,
 a:focus {
-  color: #B1C8E3;
+  color: var(--accent-color);
 }
 /*::selection {
   color: blue;
   background: red;
 }*/
+:root {
+  --accent-color: var(--salt-blue);
+  --salt-blue: #B1C8E3;
+  --yellow: #FCD081;
+  --frc-blue: #4B7DFF;
+  --guild-green: #0D411F;
+  --internet-blue: #0600bb;
+}
+.accent--salt-blue {
+  --accent-color: var(--salt-blue);
+}
+.accent--yellow {
+  --accent-color: var(--yellow);
+}
+.accent--frc-blue {
+  --accent-color: var(--frc-blue);
+}
+.accent--guild-green {
+  --accent-color: var(--guild-green);
+}
+.accent--internet-blue {
+  --accent-color: var(--internet-blue);
+}
 .fun-cursor {
   cursor: url(/assets/hicursor.svg), auto;
 }
@@ -43,7 +67,7 @@ main {
   height: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: #B1C8E3;
+  background: var(--accent-color);
 }
 
 .box {
@@ -88,6 +112,7 @@ main {
 }
 .card--image {
   border-bottom: 6px solid transparent;
+  position: relative;
 }
 .card--title {
   font-family: Roboto, sans-serif;
@@ -97,7 +122,7 @@ main {
 }
 .card--client {
   padding: 5px 0 0 0;
-  color: #0600bb;
+  color: var(--internet-blue);
 }
 .card--description {
   font-family: Roboto Slab, serif;
@@ -112,10 +137,9 @@ main {
 .card--contact {
   margin-bottom: 35px;
 }
-
 .card:hover .card--image,
 .card:focus .card--image {
-  border-color:tomato;
+  border-color: var(--accent-color);
 }
 
 .row {
@@ -125,6 +149,7 @@ main {
 .row--nav {
   align-items: center;
   justify-content: space-between;
+  z-index:1;
 }
 .row--gallery {
   display: flex;
@@ -136,7 +161,7 @@ main {
 }
 
 .logo {
-  background: #B1C8E3;
+  background: var(--accent-color);
   display: block;
   padding: 20px 25px;
   width: 60px;
@@ -193,5 +218,20 @@ main {
   }
   .image-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (pointer: fine) {
+  .card--image::before {
+    background: black;
+    content: "";
+    height: 100%;
+    mix-blend-mode: saturation;
+    position: absolute;
+    width: 100%;
+  }
+  .card:hover .card--image::before,
+  .card:focus .card--image::before{
+    background: transparent;
   }
 }
