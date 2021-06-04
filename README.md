@@ -1,24 +1,12 @@
 # fernroath.com 2021 redesign
 
-## First time set up:
+## First time set up
+
+1. Install Jekyll (requires Ruby) with `gem install bundler jekyll`
+2. macOS users must also run `bundle add webrick`
+
+## Start the web server
 
 ```
-npm install
+bundle exec jekyll serve
 ```
-
-
-## Start the web server:
-
-```
-npm run start
-```
-
-Okay thanks
-
-To quit
-
-```
-Ctrl+C
-```
-
-(Not Command)
