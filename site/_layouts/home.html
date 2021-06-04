@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<main class="gallery-view box">
+  <div class="projects">
+    <div class="projects-grid">
+      {% for project in page.projects %}
+        <a href="{{ project.link }}" class="card {{ project.color }}">
+          <div class="card--image">
+            <img src="{{ project.hero }}" />
+          </div>
+          <p class="card--title">{{ project.title }}</p>
+          <p class="card--client">{{ project.client }}</p>
+          <p class="card--description">{{ project.description }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="rectangle"></div>
+    <div>
+      <p class="card--bold">Say Hello</p>
+      <p class="card--email">
+        <a href="mailto:{{ site.email }}" target="_blank">
+          {{ site.email }}
+        </a>
+      </p>
+      <p class="card--bold">Full Resume</p>
+    </div>
+  </div>
+</main>

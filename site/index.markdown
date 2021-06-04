@@ -1,60 +1,29 @@
 ---
 title: Designer
-layout: default
+layout: home
+projects:
+  - title: Calm Cactus Goods
+    link: https://calmcact.us
+    color: accent--salt-blue
+    hero: /assets/hero/cchero.jpg
+    client: calmcact.us / Personal
+    description: Coming Soon 2021
+  - title: Illustration
+    link: /illustration
+    color: accent--yellow
+    hero: /assets/hero/illustrationhero.jpg
+    client: Personal Study
+    description: Ongoing
+  - title: Forza Racing Championship
+    link: /forza-racing-championship
+    color: accent--frc-blue
+    hero: /assets/hero/frchero.jpg
+    client: Microsoft Turn 10 Studios
+    description: 2019
+  - title: "Magic: the Gathering Guild Week"
+    link: /magic-the-gathering-guild-week
+    color: accent--guild-green
+    hero: /assets/hero/guildhero.jpg
+    client: Wizards of the Coast
+    description: 2018
 ---
-
-<main class="gallery-view box">
-  <div class="projects">
-    <div class="projects-grid">
-      <a href="https://calmcact.us" class="card accent--salt-blue">
-        <div class="card--image">
-          <img src="/assets/hero/cchero.jpg" />
-        </div>
-        <p class="card--title">Calm Cactus Goods</p>
-        <p class="card--client">calmcact.us / Personal</p>
-        <p class="card--description">Coming Soon 2021</p>
-      </a>
-      <a href="/illustration" class="card accent--yellow">
-        <div class="card--image">
-          <img src="/assets/hero/illustrationhero.jpg" />
-        </div>
-        <p class="card--title">Illustration</p>
-        <p class="card--client">Personal Study</p>
-        <p class="card--description">Ongoing</p>
-      </a>
-      <a href="/forza-racing-championship" class="card accent--frc-blue">
-        <div class="card--image">
-          <img src="/assets/hero/frchero.jpg" />
-        </div>
-        <p class="card--title">
-          Forza Racing Championship
-        </p>
-        <p class="card--client">Microsoft's Turn 10 Studios</p>
-        <p class="card--description">2019</p>
-      </a>
-      <a href="" class="card accent--guild-green">
-        <div class="card--image">
-          <img src="/assets/hero/guildhero.jpg" />
-        </div>
-        <p class="card--title">
-          Magic: the Gathering Guild Week
-        </p>
-        <p class="card--client">Wizards of the Coast</p>
-        <p class="card--description">2018</p>
-      </a>
-    </div>
-  </div>
-
-  <div class="contact">
-    <div class="rectangle"></div>
-    <div>
-      <p class="card--bold">Say Hello</p>
-      <p class="card--email">
-        <a href="mailto:me@fernroath.com" target="_blank">
-          me@fernroath.com
-        </a>
-      </p>
-      <p class="card--bold">Full Resume</p>
-    </div>
-  </div>
-</main>
