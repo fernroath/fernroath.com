@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>❏ Fern Roath ━ Illustration</title>
+    <title>{{ site.name }} - {{ page.title }}</title>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="fun-cursor {{ page.color }}">
     <svg
       style="height: 0; overflow: hidden; position: fixed; width: 0"
       version="1.1"
@@ -46,7 +46,7 @@
         ></path>
       </defs>
     </svg>
-    <div class="viewport accent--yellow">
+    <div class="viewport">
       <nav class="row box nav">
         <a href="/" class="btn">
           <svg class="logo" viewBox="0 0 300 300">
@@ -66,52 +66,10 @@
           </a>
         </div>
       </nav>
-      <main class="project-view box">
-        <div class="sidebar">
-          <div class="sidebar-nav">
-            <p class="card--title">Illustration</p>
-            <p class="card--client">Personal Study</p>
-            <p class="card--description">
-              Ongoing. Illustrative & style explorations.
-            </p>
-          </div>
-          <div class="contact">
-            <div class="rectangle"></div>
-            <p class="card--bold">Say Hello</p>
-            <p class="card--email">
-              <a href="mailto:me@fernroath.com" target="_blank">
-                me@fernroath.com
-              </a>
-            </p>
-            <p class="card--bold">Full Resume</p>
-          </div>
-        </div>
-        <div>
-          <div class="image-grid">
-            <div><img src="/assets/illustration/babybreathe.jpg" /></div>
-            <div><img src="/assets/illustration/brave.jpg" /></div>
-            <div><img src="/assets/illustration/pear.jpg" /></div>
-            <div><img src="/assets/illustration/nope.jpg" /></div>
-            <div><img src="/assets/illustration/onionknight.jpg" /></div>
-            <div><img src="/assets/illustration/determination.jpg" /></div>
-            <div><img src="/assets/illustration/forzastickerlily.jpg" /></div>
-            <div><img src="/assets/illustration/forzastickerviolet.jpg" /></div>
-            <div><img src="/assets/illustration/forzastickerwin.jpg" /></div>
-            <div><img src="/assets/illustration/themoon.jpg" /></div>
-            <div><img src="/assets/illustration/thesun.jpg" /></div>
-            <div><img src="/assets/illustration/sadshoeday.jpg" /></div>
-            <div><img src="/assets/illustration/plant1.jpg" /></div>
-            <div><img src="/assets/illustration/plant2.jpg" /></div>
-            <div><img src="/assets/illustration/plant3.jpg" /></div>
-            <div><img src="/assets/illustration/morning.jpg" /></div>
-            <div><img src="/assets/illustration/midday.jpg" /></div>
-            <div><img src="/assets/illustration/midnight.jpg" /></div>
-            <div><img src="/assets/illustration/hum.jpg" /></div>
-            <div><img src="/assets/illustration/eye.jpg" /></div>
-          </div>
-        </div>
-      </main>
+
+      {{ content }}
+
+      <!-- <script src="/main.js"></script> -->
     </div>
-    <!-- <script src="/main.js"></script> -->
   </body>
 </html>

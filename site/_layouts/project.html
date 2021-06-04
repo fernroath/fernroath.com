@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<main class="project-view box">
+  <div class="sidebar">
+    <div class="sidebar-nav">
+      <p class="card--title">{{ page.title }}</p>
+      <p class="card--client">{{ page.client }}</p>
+      <p class="card--description">{{ content }}</p>
+    </div>
+    <div class="contact">
+      <div class="rectangle"></div>
+      <p class="card--bold">Say Hello</p>
+      <p class="card--email">
+        <a href="mailto:{{ site.email }}" target="_blank">
+          {{ site.email }}
+        </a>
+      </p>
+      <p class="card--bold">Full Resume</p>
+    </div>
+  </div>
+  <div>
+    <div class="image-grid">
+      {% for item in page.images %}
+        <div><img src="{{ item }}" alt="" /></div>
+      {% endfor %}
+    </div>
+  </div>
+</main>

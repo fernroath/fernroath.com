@@ -55,7 +55,7 @@ main {
   background: red;
 }*/
 .fun-cursor {
-  cursor: url(/assets/hicursor.svg), auto;
+  cursor: url(/assets/hicursor.svg) 22 16, auto;
 }
 .rectangle {
   width: 35px;
