@@ -26,10 +26,11 @@ main {
 }
 :root {
   --accent-color: var(--salt-blue);
+  --coral: #F6917F;
   --salt-blue: #B1C8E3;
   --yellow: #FCD081;
-  --frc-blue: #4B7DFF;
-  --guild-green: #0D411F;
+  --frc-blue: #4469ad;
+  --guild-green: #5e8846;
   --internet-blue: #0600bb;
 
   --nav-height: 107px;
@@ -37,6 +38,9 @@ main {
 }
 .accent--salt-blue {
   --accent-color: var(--salt-blue);
+}
+.accent--coral {
+  --accent-color: var(--coral);
 }
 .accent--yellow {
   --accent-color: var(--yellow);
@@ -90,6 +94,7 @@ main {
 .sidebar {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
 }
 .sidebar-nav {
   flex-grow: 1;
@@ -108,7 +113,6 @@ main {
   font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: 700;
-  margin-top: 12px;
 }
 .card--client {
   padding: 5px 0 0 0;
@@ -157,7 +161,7 @@ main {
 .logo {
   background: var(--accent-color);
   display: block;
-  padding: 20px 25px;
+  padding: 20px 20px;
   width: 60px;
 }
 .logo:hover,
@@ -185,36 +189,32 @@ main {
   flex-grow: 1;
 }
 
-@media (min-width: 700px) {
+/*@media (min-width: 700px) {
   .projects-grid {
     grid-template-columns: 1fr 1fr;
   }
-}
+}*/
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   :root {
     --nav-height: 142px;
+    --v-gap: 60px;
   }
   .box {
     padding-left: 75px;
     padding-right: 75px;
   }
   .projects-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .project-view {
-    display: flex;
-    flex-grow: 1;
     gap: 60px;
-  }
-  .sidebar {
-    height: calc(100vh - var(--nav-height) - var(--v-gap));
   }
   .sidebar-nav {
     min-width: 300px;
   }
   .image-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -227,8 +227,19 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .logo {
-    padding: 30px 15px;
+    padding: 30px 20px;
     width: 75px;
+  }
+  .image-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project-view {
+    display: flex;
+    flex-grow: 1;
+    gap: 60px;
+  }
+  .sidebar {
+    height: calc(100vh - var(--nav-height) - var(--v-gap));
   }
 }
 

@@ -20,10 +20,13 @@ projects:
     hero: /assets/hero/frchero.jpg
     client: Microsoft Turn 10 Studios
     description: 2019
-  - title: "Magic: the Gathering Guild Week"
+  - title: "Magic: the Gathering Guild&nbsp;Week"
     link: /magic-the-gathering-guild-week
     color: accent--guild-green
     hero: /assets/hero/guildhero.jpg
     client: Wizards of the Coast
     description: 2018
+color: accent--coral
 ---
+
+
