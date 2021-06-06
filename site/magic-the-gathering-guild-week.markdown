@@ -14,6 +14,9 @@ images: [
   /assets/guildweek/selesnyasocial.jpg,
 ]
 color: accent--guild-green
+
+next: /illustration
+prev: /forza-racing-championship
 ---
 
 For the launch of the Magic: The Gathering set, Guilds of Ravnica, the Web & Interactive Media team was tasked with creating a set of visuals to provide for fans for both advertisement on social media platforms and for players to download to support their favorite guild for the upcoming release. This involved making a set of 10 of key arts, painting and even adding to existing artwork digitally and then expanding into over 300 digital assets that would span from social media icons to full blown high res wallpapers. This also included localization in multiple languages.

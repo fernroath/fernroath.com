@@ -4,7 +4,7 @@ layout: home
 projects:
   - title: Calm Cactus Goods
     link: https://calmcact.us
-    color: accent--salt-blue
+    color: accent--coral
     hero: /assets/hero/cchero.jpg
     client: calmcact.us / Personal
     description: Coming Soon 2021
@@ -26,7 +26,7 @@ projects:
     hero: /assets/hero/guildhero.jpg
     client: Wizards of the Coast
     description: 2018
-color: accent--coral
+color: accent--sky-plum
 ---
 
 

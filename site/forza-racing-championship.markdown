@@ -17,6 +17,9 @@ images: [
   /assets/frc/righthelmet.jpg
 ]
 color: accent--frc-blue
+
+next: /magic-the-gathering-guild-week
+prev: /illustration
 ---
 
 Forza Racing Championship is the exclusive e-Sports competition of Turn 10 Studios, the Microsoft Xbox studio in charge of the Forza Motorsport franchise.

@@ -25,6 +25,9 @@ images: [
   /assets/illustration/eye.jpg,
 ]
 color: accent--yellow
+
+next: /forza-racing-championship
+prev: /magic-the-gathering-guild-week
 ---
 
 Ongoing. Illustrative & style explorations.

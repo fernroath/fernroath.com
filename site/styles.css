@@ -31,9 +31,9 @@ main {
   --nav-height: 108px;
   --v-gap: 30px;
 }
-.accent--salt-blue {
-  --accent-color: #B1C8E3;
-  --accent-text: #486D99;
+.accent--sky-plum {
+  --accent-color: #AFB5FC;
+  --accent-text: #EB8734;
 }
 .accent--coral {
   --accent-color: #F6917F;
@@ -44,12 +44,12 @@ main {
   --accent-text: #D48500;
 }
 .accent--frc-blue {
-  --accent-color: #0C91CB;
-  --accent-text: #270560;
+  --accent-color: #2663A6;
+  --accent-text: #099CD7;
 }
 .accent--guild-green {
-  --accent-color: #89B66E;
-  --accent-text: #274D11;
+  --accent-color: #B9D7A8;
+  --accent-text: #48901C;
 }
 .accent--internet-blue {
   --accent-color: #0600bb;
@@ -60,7 +60,7 @@ main {
 .card:hover .card--image::after,
 .card:focus .card--image::after {
   background-image: url(/assets/white_texture.png);
-  background-blend-mode: multiply;
+  /*background-blend-mode: multiply;*/
 }
 .fun-cursor {
   cursor: url(/assets/hicursor.svg) 22 16, auto;
@@ -75,8 +75,8 @@ main {
 
 .box {
   box-sizing: border-box;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .viewport {
@@ -287,6 +287,13 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
+.project--nav {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 35px;
+}
 
 @media (min-width: 700px) {
   .box {
@@ -302,6 +309,9 @@ main {
   .image-grid {
     grid-template-columns: 1fr 1fr;
   }
+.project--nav {
+  padding: 45px 0 30px;
+}
 }
 
 @media (min-width: 1200px) {
@@ -327,9 +337,6 @@ main {
     display: flex;
     flex-grow: 1;
     gap: 60px;
-  }
-  .sidebar {
-    height: calc(100vh - var(--nav-height) - var(--v-gap));
   }
 }
 
