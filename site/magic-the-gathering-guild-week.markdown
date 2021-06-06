@@ -16,7 +16,6 @@ images: [
 color: accent--guild-green
 ---
 
-This is where a full, detail description of a project will go. It should include a summary of the project -  a generalized goal, challenges and credits to other team members. Include basic line up.
-Team project. 2019.
-Memebers involved: AD, SD, Producer, D
-Role: conceptualization, visual direction and production
+For the launch of the Magic: The Gathering set, Guilds of Ravnica, the Web & Interactive Media team was tasked with creating a set of visuals to provide for fans for both advertisement on social media platforms and for players to download to support their favorite guild for the upcoming release. This involved making a set of 10 of key arts, painting and even adding to existing artwork digitally and then expanding into over 300 digital assets that would span from social media icons to full blown high res wallpapers. This also included localization in multiple languages.
+
+My role was creation of all keyarts and deliverables under the gudience of Creative Director and Art Director. This included digital manipulation and additional painting of exisiting artworks, localization and delivery.

@@ -6,10 +6,12 @@ layout: default
     <div class="sidebar-nav">
       <p class="card--title">{{ page.title }}</p>
       <p class="card--client">{{ page.client }}</p>
-      <p class="card--description">{{ content }}</p>
+      <div class="card--description">
+        {{ content }}
+      </div>
     </div>
     <div class="contact">
-      <div class="rectangle"></div>
+      <div class="rectangle fill--texture"></div>
       <p class="card--bold">Say Hello</p>
       <p class="card--email">
         <a href="mailto:{{ site.email }}" target="_blank">
@@ -19,7 +21,7 @@ layout: default
       <p class="card--bold">Full Resume</p>
     </div>
   </div>
-  <div>
+  <div class="content">
     <div class="image-grid">
       {% for item in page.images %}
         <div><img src="{{ item }}" alt="" /></div>

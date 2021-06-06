@@ -19,8 +19,9 @@ images: [
 color: accent--frc-blue
 ---
 
-This is where a full, detail description of a project will go. It should include a summary of the project -  a generalized goal, challenges and credits to other team members. Include basic line up.
+Forza Racing Championship is the exclusive e-Sports competition of Turn 10 Studios, the Microsoft Xbox studio in charge of the Forza Motorsport franchise.
 
-Team project. 2019.
+In 2019, our team had the task to give FRC an overall brand, broadcasting and visual refresh. We touched social media assets, provided visually appealing assets forr our content creators and host partners on Twitch and got the pleasure of spearheading the design for the event's Finals in partnerhsip with Lamborghini.
 
-Role: conceptualization, visual direction and production
+My role revolved around overall exploration for brand and production polish alongside with another team member, including pre-press and prepping files to be recieved by external teams for print and event set up in a quick turn around enviorment. I was also tasked with conceptualization for visual direction and design research in coordination with the lead designer for a fresh new look for competitive e-Sport racing.
+
