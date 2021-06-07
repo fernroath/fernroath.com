@@ -24,7 +24,7 @@ prev: /magic-the-gathering-guild-week
 
 Calm Cactus Goods is a collection of limited made goods, artful experiments & processes of different creative ideas and media. Currently developing social media accounts and developing a functioning and interactive site to display and sell goods of quality.
 
-My goal is to have fun and create hand made goods that make someone's everyday a little bit brighter.
+My goal in creating hand made goods is to make someone’s everyday a little bit brighter
 
 If you'd like to support and see more works — you can follow on <a href="https://twitter.com/calmcactusgoods">Twitter</a> and <a href="https://www.instagram.com/calmcactusgoods/">Instagram</a>.
 
