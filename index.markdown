@@ -3,7 +3,7 @@ title: Designer
 layout: home
 projects:
   - title: Calm Cactus Goods
-    link: https://calmcact.us
+    link: /calm-cactus-goods
     color: accent--coral
     hero: /assets/hero/cchero.jpg
     client: calmcact.us / Personal

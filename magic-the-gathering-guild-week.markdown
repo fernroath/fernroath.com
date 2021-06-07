@@ -15,7 +15,7 @@ images: [
 ]
 color: accent--guild-green
 
-next: /illustration
+next: /calm-cactus-goods
 prev: /forza-racing-championship
 ---
 

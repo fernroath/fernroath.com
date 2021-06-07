@@ -27,7 +27,7 @@ images: [
 color: accent--yellow
 
 next: /forza-racing-championship
-prev: /magic-the-gathering-guild-week
+prev: /calm-cactus-goods
 ---
 
 Ongoing. Illustrative & style explorations.

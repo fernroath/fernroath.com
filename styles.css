@@ -19,7 +19,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: var(--accent-text);
+  color: var(--accent-text) !important;
 }
 main {
   max-width: 100%;
@@ -138,6 +138,9 @@ main {
 }
 .card--description p {
   margin-bottom: 12px;
+}
+.card--description a {
+  color: var(--accent-color);
 }
 .card--email {
   margin-bottom: 10px;
