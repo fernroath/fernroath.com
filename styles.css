@@ -10,7 +10,7 @@ p {
   margin: 0;
 }
 img {
-  display:block;
+  display: block;
   max-width: 100%;
 }
 a {
@@ -25,34 +25,42 @@ main {
   max-width: 100%;
 }
 :root {
-  --accent-color: #B1C8E3;
+  --accent-color: #b1c8e3;
   --accent-text: #f00;
   --texture: url(/assets/white_texture.png);
   --nav-height: 108px;
   --v-gap: 30px;
 }
 .accent--sky-plum {
-  --accent-color: #AFB5FC;
-  --accent-text: #EB8734;
+  --accent-color: #afb5fc;
+  --accent-text: #eb8734;
 }
 .accent--coral {
-  --accent-color: #F6917F;
-  --accent-text: #94301F;
+  --accent-color: #f6917f;
+  --accent-text: #94301f;
 }
 .accent--yellow {
-  --accent-color: #FCD081;
-  --accent-text: #D48500;
+  --accent-color: #fcd081;
+  --accent-text: #d48500;
 }
 .accent--frc-blue {
-  --accent-color: #2663A6;
-  --accent-text: #099CD7;
+  --accent-color: #2663a6;
+  --accent-text: #099cd7;
 }
 .accent--guild-green {
-  --accent-color: #B9D7A8;
-  --accent-text: #48901C;
+  --accent-color: #b9d7a8;
+  --accent-text: #48901c;
 }
 .accent--internet-blue {
   --accent-color: #0600bb;
+}
+.accent--acqh {
+  --accent-color: #8d433a;
+  --accent-text: #479e8a;
+}
+.accent--super-online-purple {
+  --accent-color: #c1a5ff;
+  --accent-text: #6F50B2;
 }
 
 .fill--texture,
@@ -161,7 +169,7 @@ main {
   width: 60px;
 }
 .wiggle {
-  width:70px;
+  width: 70px;
 }
 .card:nth-child(1) .circle {
   top: 30%;
@@ -178,6 +186,14 @@ main {
 .card:nth-child(4) .circle {
   bottom: 40%;
   right: -30px;
+}
+.card:nth-child(5) .circle {
+  top: 60%;
+  left: -30px;
+}
+.card:nth-child(6) .circle {
+  top: 10%;
+  left: -20px;
 }
 .card:nth-child(1) .wiggle {
   top: -8%;
@@ -199,6 +215,16 @@ main {
   left: -30px;
   transform: rotate(40deg);
 }
+.card:nth-child(5) .wiggle {
+  top: 35%;
+  right: -30px;
+  transform: rotate(40deg);
+}
+.card:nth-child(6) .wiggle {
+  bottom: 35%;
+  right: -20px;
+  transform: rotate(40deg);
+}
 .card:nth-child(1) .square {
   bottom: 22%;
   right: -20px;
@@ -218,6 +244,16 @@ main {
   top: -5%;
   left: 40px;
   transform: rotate(40deg);
+}
+.card:nth-child(5) .square {
+  top: -5%;
+  right: 40px;
+  transform: rotate(40deg);
+}
+.card:nth-child(6) .square {
+  bottom: 15%;
+  right: 40px;
+  transform: rotate(20deg);
 }
 
 .contact {
@@ -312,9 +348,9 @@ main {
   .image-grid {
     grid-template-columns: 1fr 1fr;
   }
-.project--nav {
-  padding: 45px 0 30px;
-}
+  .project--nav {
+    padding: 45px 0 30px;
+  }
 }
 
 @media (min-width: 1200px) {
