@@ -187,14 +187,6 @@ main {
   bottom: 40%;
   right: -30px;
 }
-.card:nth-child(5) .circle {
-  top: 60%;
-  left: -30px;
-}
-.card:nth-child(6) .circle {
-  top: 10%;
-  left: -20px;
-}
 .card:nth-child(1) .wiggle {
   top: -8%;
   right: -15px;
@@ -213,16 +205,6 @@ main {
 .card:nth-child(4) .wiggle {
   bottom: 35%;
   left: -30px;
-  transform: rotate(40deg);
-}
-.card:nth-child(5) .wiggle {
-  top: 35%;
-  right: -30px;
-  transform: rotate(40deg);
-}
-.card:nth-child(6) .wiggle {
-  bottom: 35%;
-  right: -20px;
   transform: rotate(40deg);
 }
 .card:nth-child(1) .square {
@@ -244,16 +226,6 @@ main {
   top: -5%;
   left: 40px;
   transform: rotate(40deg);
-}
-.card:nth-child(5) .square {
-  top: -5%;
-  right: 40px;
-  transform: rotate(40deg);
-}
-.card:nth-child(6) .square {
-  bottom: 15%;
-  right: 40px;
-  transform: rotate(20deg);
 }
 
 .contact {

@@ -26,20 +26,6 @@ projects:
     hero: /assets/hero/guildhero.jpg
     client: Wizards of the Coast
     description: 2018
-  - title: Super Online_
-    <!-- link: /super-online -->
-    color: accent--super-online-purple
-    client: Personal Study (HTML, CSS & JS)
-    hero: /assets/hero/superonlinehero.jpg
-    description: Coming soon
-  - title: "ACQH Brand & Web"
-    <!-- link: /arizona-cactus-quater-horses -->
-    color: accent--acqh
-    hero: /assets/hero/acqhhero.jpg
-    client: "Arizona&nbsp;Cactus Quarter&nbsp;Horses"
-    description: Coming soon
-
-color: accent--sky-plum
 ---
 
 
