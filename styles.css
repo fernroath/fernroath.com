@@ -1,5 +1,6 @@
 /*plain css document*/
 body {
+  background: #F2F0EB;
   font-family: Roboto, sans-serif;
   font-weight: 300;
   line-height: 20px;
@@ -28,7 +29,6 @@ main {
   --accent-color: #b1c8e3;
   --accent-text: #f00;
   --texture: url(/assets/white_texture.png);
-  --nav-height: 108px;
   --v-gap: 30px;
 }
 .accent--sky-plum {
@@ -62,14 +62,6 @@ main {
   --accent-color: #c1a5ff;
   --accent-text: #6F50B2;
 }
-
-.fill--texture,
-.nav::after,
-.card:hover .card--image::after,
-.card:focus .card--image::after {
-  background-image: url(/assets/white_texture.png);
-  /*background-blend-mode: multiply;*/
-}
 .fun-cursor {
   cursor: url(/assets/hicursor.svg) 22 16, auto;
 }
@@ -93,7 +85,6 @@ main {
   flex-direction: column;
   max-width: 2000px;
   min-height: 100vh;
-  padding-top: var(--nav-height);
 }
 
 .image-grid {
@@ -244,39 +235,17 @@ main {
 
 .nav {
   align-items: center;
-  background-color: #fff;
   flex-grow: 0;
   justify-content: space-between;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 1;
 }
-.nav::after {
-  background-color: var(--accent-color);
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 7px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
 .icon {
   width: 45px;
 }
 
 .logo {
-  background-color: var(--accent-color);
   display: block;
-  padding: 20px 20px;
+  padding: 20px 0;
   width: 60px;
-}
-.logo:hover,
-.logo:focus {
-  color: #fff;
 }
 
 .projects {
@@ -327,7 +296,6 @@ main {
 
 @media (min-width: 1200px) {
   :root {
-    --nav-height: 152px;
     --v-gap: 60px;
   }
   .box {
@@ -338,7 +306,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .logo {
-    padding: 30px 20px;
+    padding: 30px 0;
     width: 75px;
   }
   .image-grid {

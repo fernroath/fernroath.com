@@ -7,6 +7,8 @@
 
 ## Start the web server
 
+Paste following into terminal and execute:
+
 ```
 bundle exec jekyll serve
 ```
