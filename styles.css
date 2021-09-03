@@ -6,6 +6,8 @@ body {
   line-height: 20px;
   margin: 0;
   min-height: 100vh;
+  text-align: center;
+  cursor: url(/assets/cursor/black.png) 36 36, auto;
 }
 p {
   margin: 0;
@@ -21,35 +23,34 @@ a {
 a:hover,
 a:focus {
   color: var(--accent-text) !important;
+  cursor: pointer;
 }
 main {
   max-width: 100%;
 }
 :root {
-  --accent-color: #b1c8e3;
-  --accent-text: #f00;
-  --texture: url(/assets/white_texture.png);
   --v-gap: 30px;
-}
-.accent--sky-plum {
-  --accent-color: #afb5fc;
-  --accent-text: #eb8734;
 }
 .accent--coral {
   --accent-color: #f6917f;
   --accent-text: #94301f;
+  cursor: url(/assets/cursor/coral.png) 36 36, auto;
 }
-.accent--yellow {
-  --accent-color: #fcd081;
-  --accent-text: #d48500;
+:root,
+.accent--moss {
+  --accent-color: #719E8D;
+  --accent-text: #22503F;
+  cursor: url(/assets/cursor/moss.png) 36 36, auto;
 }
 .accent--frc-blue {
   --accent-color: #2663a6;
   --accent-text: #099cd7;
+  cursor: url(/assets/cursor/frc.png) 36 36, auto;
 }
 .accent--guild-green {
   --accent-color: #b9d7a8;
   --accent-text: #48901c;
+  cursor: url(/assets/cursor/forest.png) 36 36, auto;
 }
 .accent--internet-blue {
   --accent-color: #0600bb;
@@ -57,13 +58,22 @@ main {
 .accent--acqh {
   --accent-color: #8d433a;
   --accent-text: #479e8a;
+  cursor: url(/assets/cursor/dust-rose.png) 36 36, auto;
 }
 .accent--super-online-purple {
   --accent-color: #c1a5ff;
   --accent-text: #6F50B2;
+  cursor: url(/assets/cursor/blight-violet.png) 36 36, auto;
 }
-.fun-cursor {
-  cursor: url(/assets/hicursor.svg) 22 16, auto;
+.accent--gemini-c {
+  --accent-color: #DB7093;
+  --accent-text: #3C5575;
+  cursor: url(/assets/cursor/gemini-maroon.png) 36 36, auto;
+}
+.accent--four-discs {
+  --accent-color: #FFB202;
+  --accent-text: #D9A122;
+  cursor: url(/assets/cursor/mustard-gold.png) 36 36, auto;
 }
 .rectangle {
   width: 35px;
@@ -81,10 +91,10 @@ main {
 
 .viewport {
   box-sizing: border-box;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  max-width: 2000px;
   min-height: 100vh;
+  text-align: left;
 }
 
 .image-grid {
@@ -106,8 +116,8 @@ main {
 
 .card {
   display: block;
+  max-width: 600px;
   position: relative;
-  width: 100%;
 }
 .card--image {
   position: relative;
@@ -252,6 +262,7 @@ main {
   align-items: center;
   display: flex;
   flex-grow: 1;
+  justify-content: center;
 }
 .projects-grid {
   display: grid;
@@ -282,6 +293,7 @@ main {
   }
   .projects-grid {
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
   .sidebar-nav {
     min-width: 300px;

@@ -24,7 +24,7 @@ images: [
   /assets/illustration/hum.jpg,
   /assets/illustration/eye.jpg,
 ]
-color: accent--yellow
+color: accent--moss
 
 next: /forza-racing-championship
 prev: /calm-cactus-goods

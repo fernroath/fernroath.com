@@ -10,7 +10,7 @@ projects:
     description: Coming soon 2021
   - title: Illustration
     link: /illustration
-    color: accent--yellow
+    color: accent--moss
     hero: /assets/hero/illustrationhero.jpg
     client: Personal Study
     description: Ongoing
