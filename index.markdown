@@ -7,7 +7,7 @@ projects:
     color: accent--coral
     hero: /assets/hero/cchero.jpg
     client: calmcact.us / Personal
-    description: Coming soon 2021
+    description: 2021 - current
   - title: Illustration
     link: /illustration
     color: accent--moss

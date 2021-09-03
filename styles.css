@@ -122,7 +122,7 @@ main {
 .card--image {
   position: relative;
 }
-.card--image::after {
+.card::after {
   bottom: 0;
   content: "";
   left: 0;
@@ -130,7 +130,10 @@ main {
   position: absolute;
   width: 100%;
   opacity: 0;
-  transition: opacity 200ms ease-in-out;
+}
+.card--content {
+  padding:  5px 15px 22px;
+  z-index:  1;
 }
 .card--title {
   font-family: Roboto, sans-serif;
@@ -157,28 +160,64 @@ main {
 .card--bold {
   font-weight: 700;
 }
+@keyframes breathe {
+  0% {
+    margin: 0;
+  }
+  50% {
+    margin: var(--s) 0;
+  }
+  100% {
+    margin: 0;
+  }
+}
 .card--confetti {
+  --s: 10px;
+  animation: 2s breathe infinite;
   color: var(--accent-color);
   position: absolute;
   opacity: 0;
-  transition: opacity 200ms ease-in-out;
+  transform: translate3d(0,0,0);
+  transition: opacity 200ms ease-in;
+  z-index: -1;
 }
 .square {
   width: 50px;
 }
 .circle {
+  --s: -10px;
   width: 60px;
 }
 .wiggle {
   width: 70px;
+}
+.sparkle {
+  --s: -10px;
+  width:  60px;
+}
+.card:nth-child(1) .sparkle {
+  bottom: -10%;
+  right: 30px;
+}
+.card:nth-child(2) .sparkle {
+  top: -5%;
+  right: 40px;
+}
+.card:nth-child(3) .sparkle {
+  top: -10%;
+  right: -5px;
+}
+.card:nth-child(4) .sparkle {
+  bottom: -8%;
+  right: 100px;
 }
 .card:nth-child(1) .circle {
   top: 30%;
   left: -30px;
 }
 .card:nth-child(2) .circle {
-  top: -5%;
-  right: 40px;
+  bottom: -6%;
+  left: 40px;
 }
 .card:nth-child(3) .circle {
   bottom: 30%;
@@ -191,42 +230,42 @@ main {
 .card:nth-child(1) .wiggle {
   top: -8%;
   right: -15px;
-  transform: rotate(40deg);
+  transform: translate3d(0,0,0) rotate(40deg);
 }
 .card:nth-child(2) .wiggle {
   bottom: 30%;
   right: -20px;
-  transform: rotate(-40deg);
+  transform: translate3d(0,0,0) rotate(-40deg);
 }
 .card:nth-child(3) .wiggle {
   top: -5%;
   left: -20px;
-  transform: rotate(70deg);
+  transform: translate3d(0,0,0) rotate(70deg);
 }
 .card:nth-child(4) .wiggle {
   bottom: 35%;
   left: -30px;
-  transform: rotate(40deg);
+  transform: translate3d(0,0,0) rotate(40deg);
 }
 .card:nth-child(1) .square {
   bottom: 22%;
   right: -20px;
-  transform: rotate(30deg);
+  transform: translate3d(0,0,0) rotate(30deg);
 }
 .card:nth-child(2) .square {
   bottom: 60%;
   left: -20px;
-  transform: rotate(-20deg);
+  transform: translate3d(0,0,0) rotate(-20deg);
 }
 .card:nth-child(3) .square {
-  top: 5%;
-  right: -5px;
-  transform: rotate(70deg);
+  bottom: -8%;
+  right: -15px;
+  transform: translate3d(0,0,0) rotate(70deg);
 }
 .card:nth-child(4) .square {
   top: -5%;
   left: 40px;
-  transform: rotate(40deg);
+  transform: translate3d(0,0,0) rotate(40deg);
 }
 
 .contact {
@@ -340,9 +379,16 @@ main {
     position: absolute;
     width: 100%;
   }
-  .card:hover .card--image::after,
-  .card:focus .card--image::after {
+  .card:hover,
+  .card:focus {
+    background-color: white;
+    box-shadow: 0 17px 23px -13px rgb(182, 182, 182);
+  }
+  .card::after {
     background-color: var(--accent-color);
+  }
+  .card:hover::after,
+  .card:focus::after {
     opacity: 1;
   }
   .card:hover .card--image::before,

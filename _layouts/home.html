@@ -10,9 +10,11 @@ layout: default
         <div class="card--image">
           <img src="{{ project.hero }}" />
         </div>
+        <div class="card--content">
         <p class="card--title">{{ project.title }}</p>
         <p class="card--client">{{ project.client }}</p>
         <p class="card--description">{{ project.description }}</p>
+      </div>
         <svg class="card--confetti circle" viewBox="0 0 300 300">
           <use xlink:href="#circle" />
         </svg>
@@ -21,6 +23,9 @@ layout: default
         </svg>
         <svg class="card--confetti square" viewBox="0 0 300 300">
           <use xlink:href="#square" />
+        </svg>
+        <svg class="card--confetti sparkle" viewBox="0 0 300 300">
+          <use xlink:href="#sparkle" />
         </svg>
       </a>
       {% endfor %}
