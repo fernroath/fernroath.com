@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include nav.html %}
+
 <main class="project-view box">
   <div class="sidebar">
     <div class="sidebar-nav">
@@ -9,16 +11,7 @@ layout: default
       <p class="card--client">{{ page.client }}</p>
       <div class="card--description">{{ content }}</div>
     </div>
-    <div class="contact">
-      <div class="rectangle"></div>
-      <p class="card--bold">Say Hello</p>
-      <p class="card--email">
-        <a href="mailto:{{ site.email }}" target="_blank"> {{ site.email }} </a>
-      </p>
-      <a href="/assets/fernroath_resume_2021.pdf" target="_blank">
-        <p class="card--bold">Full Resume</p>
-      </a>
-    </div>
+    {% include contact.html barClass="accent--fill" %}
   </div>
   <div class="content">
     <div class="image-grid">

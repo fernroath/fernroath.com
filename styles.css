@@ -3,12 +3,15 @@ body {
   background: #F2F0EB;
   font-family: Roboto, sans-serif;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 24px;
   margin: 0;
   min-height: 100vh;
-  text-align: center;
   cursor: url(/assets/cursor/black.png) 36 36, auto;
 }
+h1 {
+  font-size: 20px;
+}
+h1,
 p {
   margin: 0;
 }
@@ -27,9 +30,6 @@ a:focus {
 }
 main {
   max-width: 100%;
-}
-:root {
-  --v-gap: 30px;
 }
 .accent--coral {
   --accent-color: #f6917f;
@@ -75,26 +75,23 @@ main {
   --accent-text: #D9A122;
   cursor: url(/assets/cursor/mustard-gold.png) 36 36, auto;
 }
+.accent--fill {
+  background-color: var(--accent-color);
+}
+.chai--fill {
+  background-color: #F2F0EB;
+}
 .rectangle {
   width: 35px;
   height: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
-  background-color: var(--accent-color);
 }
 
 .box {
   box-sizing: border-box;
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.viewport {
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: column;
-  min-height: 100vh;
-  text-align: left;
 }
 
 .image-grid {
@@ -115,25 +112,19 @@ main {
 }
 
 .card {
+  border-bottom: 7px solid transparent;
   display: block;
   max-width: 600px;
   position: relative;
+  z-index: 1;
 }
 .card--image {
   position: relative;
 }
-.card::after {
-  bottom: 0;
-  content: "";
-  left: 0;
-  height: 7px;
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-}
 .card--content {
-  padding:  5px 15px 22px;
-  z-index:  1;
+  padding: 5px 15px 22px;
+  position: relative;
+  z-index: 1;
 }
 .card--title {
   font-family: Roboto, sans-serif;
@@ -173,7 +164,6 @@ main {
 }
 .card--confetti {
   --s: 10px;
-  animation: 2s breathe infinite;
   color: var(--accent-color);
   position: absolute;
   opacity: 0;
@@ -193,7 +183,7 @@ main {
 }
 .sparkle {
   --s: -10px;
-  width:  60px;
+  width: 60px;
 }
 .card:nth-child(1) .sparkle {
   bottom: -10%;
@@ -284,17 +274,49 @@ main {
 
 .nav {
   align-items: center;
+  background: #F2F0EB;
   flex-grow: 0;
   justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
 }
 .icon {
   width: 45px;
 }
+.about-view,
+.grad-bg {
+  background: linear-gradient(90deg, #7BC2A7, #BAE3C8) fixed, #7BC2A7;
+}
+.about--content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  justify-content: center;
+  max-width: 1000px;
+  padding-top: 200px;
+}
 
-.logo {
-  display: block;
-  padding: 20px 0;
-  width: 60px;
+.gallery-view {
+  background: #F2F0EB;
+  display: flex;
+  flex-direction: column;
+}
+.gallery-content {
+  padding-top: 100px;
+}
+
+.pane {
+  clip-path: url(#curtain1);
+  padding-bottom: 10vw;
+}
+.pane--content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .projects {
@@ -308,14 +330,8 @@ main {
   gap: 40px;
   margin-bottom: 40px;
 }
-.project-view,
-.gallery-view {
-  margin-top: var(--v-gap);
-}
-.gallery-view {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+.project-view {
+  padding-top: 100px;
 }
 .project--nav {
   font-weight: bold;
@@ -330,9 +346,14 @@ main {
     padding-left: 75px;
     padding-right: 75px;
   }
+  .pane {
+    clip-path: url(#curtain2);
+  }
+  .gallery-content {
+    padding-top: 150px;
+  }
   .projects-grid {
     grid-template-columns: 1fr 1fr;
-    align-items: center;
   }
   .sidebar-nav {
     min-width: 300px;
@@ -344,21 +365,30 @@ main {
     padding: 45px 0 30px;
   }
 }
-
 @media (min-width: 1200px) {
-  :root {
-    --v-gap: 60px;
-  }
   .box {
     padding-left: 100px;
     padding-right: 100px;
   }
+  .about-view,
+  .gallery-view {
+    min-height: 100vh;
+  }
+  .pane {
+    clip-path: url(#curtain3);
+  }
+  .pane--content {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .gallery-content {
+    padding-top: 200px;
+  }
   .projects-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .logo {
-    padding: 30px 0;
-    width: 75px;
   }
   .image-grid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -367,6 +397,12 @@ main {
     display: flex;
     flex-grow: 1;
     gap: 60px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .pane {
+    clip-path: url(#curtain4);
   }
 }
 
@@ -381,15 +417,12 @@ main {
   }
   .card:hover,
   .card:focus {
-    background-color: white;
+    border-color: var(--accent-color);
     box-shadow: 0 17px 23px -13px rgb(182, 182, 182);
   }
-  .card::after {
-    background-color: var(--accent-color);
-  }
-  .card:hover::after,
-  .card:focus::after {
-    opacity: 1;
+  .card:hover .card--content,
+  .card:focus .card--content {
+    background-color: white;
   }
   .card:hover .card--image::before,
   .card:focus .card--image::before {
@@ -397,6 +430,7 @@ main {
   }
   .card:hover .card--confetti,
   .card:focus .card--confetti {
+    animation: 2s breathe infinite;
     opacity: 1;
   }
 }
