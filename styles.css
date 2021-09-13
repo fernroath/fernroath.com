@@ -9,7 +9,7 @@ body {
   cursor: url(/assets/cursor/black.png) 36 36, auto;
 }
 h1 {
-  font-size: 20px;
+  font-size: 30px;
 }
 h1,
 p {
@@ -37,9 +37,13 @@ main {
   cursor: url(/assets/cursor/coral.png) 36 36, auto;
 }
 :root,
+.accent--dew {
+  --accent-color: #6D48FF;
+  --accent-text: #3A07FF;
+}
 .accent--moss {
-  --accent-color: #719E8D;
-  --accent-text: #22503F;
+  --accent-color: #A5E0CC;
+  --accent-text: #719E8D;
   cursor: url(/assets/cursor/moss.png) 36 36, auto;
 }
 .accent--frc-blue {
@@ -117,6 +121,8 @@ main {
   max-width: 600px;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 .card--image {
   position: relative;
@@ -125,6 +131,7 @@ main {
   padding: 5px 15px 22px;
   position: relative;
   z-index: 1;
+  flex-grow: 1;
 }
 .card--title {
   font-family: Roboto, sans-serif;
@@ -201,6 +208,18 @@ main {
   bottom: -8%;
   right: 100px;
 }
+.card:nth-child(5) .sparkle {
+  top: -5%;
+  right: 40px;
+}
+.card:nth-child(6) .sparkle {
+  top: -10%;
+  right: -5px;
+}
+.card:nth-child(7) .sparkle {
+  bottom: -10%;
+  right: 30px;
+}
 .card:nth-child(1) .circle {
   top: 30%;
   left: -30px;
@@ -216,6 +235,18 @@ main {
 .card:nth-child(4) .circle {
   bottom: 40%;
   right: -30px;
+}
+.card:nth-child(5) .circle {
+  bottom: -6%;
+  left: 40px;
+}
+.card:nth-child(6) .circle {
+  bottom: 30%;
+  left: -15px;
+}
+.card:nth-child(7) .circle {
+  top: 30%;
+  left: -30px;
 }
 .card:nth-child(1) .wiggle {
   top: -8%;
@@ -235,6 +266,21 @@ main {
 .card:nth-child(4) .wiggle {
   bottom: 35%;
   left: -30px;
+  transform: translate3d(0,0,0) rotate(40deg);
+}
+.card:nth-child(5) .wiggle {
+  bottom: 30%;
+  right: -20px;
+  transform: translate3d(0,0,0) rotate(-40deg);
+}
+.card:nth-child(6) .wiggle {
+  top: -5%;
+  left: -20px;
+  transform: translate3d(0,0,0) rotate(70deg);
+}
+.card:nth-child(7) .wiggle {
+  top: -8%;
+  right: -15px;
   transform: translate3d(0,0,0) rotate(40deg);
 }
 .card:nth-child(1) .square {
@@ -257,6 +303,21 @@ main {
   left: 40px;
   transform: translate3d(0,0,0) rotate(40deg);
 }
+.card:nth-child(5) .square {
+  bottom: 60%;
+  left: -20px;
+  transform: translate3d(0,0,0) rotate(-20deg);
+}
+.card:nth-child(6) .square {
+  bottom: -8%;
+  right: -15px;
+  transform: translate3d(0,0,0) rotate(70deg);
+}
+.card:nth-child(7) .square {
+  bottom: 22%;
+  right: -20px;
+  transform: translate3d(0,0,0) rotate(30deg);
+}
 
 .contact {
   margin: 35px 0;
@@ -278,13 +339,17 @@ main {
   flex-grow: 0;
   justify-content: space-between;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
   position: fixed;
   width: 100%;
   z-index: 10000;
 }
 .icon {
   width: 45px;
+}
+.about-view,
+.gallery-view {
+  position: relative;
 }
 .about-view,
 .grad-bg {
@@ -296,10 +361,12 @@ main {
   flex-grow: 1;
   gap: 16px;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 800px;
   padding-top: 200px;
 }
-
+.about-view .square {
+  position: absolute;
+}
 .gallery-view {
   background: #F2F0EB;
   display: flex;

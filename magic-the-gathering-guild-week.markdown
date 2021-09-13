@@ -15,7 +15,7 @@ images: [
 ]
 color: accent--guild-green
 
-next: /calm-cactus-goods
+next: /gemini-c-blanket
 prev: /forza-racing-championship
 ---
 

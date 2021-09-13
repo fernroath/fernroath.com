@@ -1,33 +1,27 @@
 ---
 title: Illustration
 layout: project
-client: Personal Study
+client: Digital / Personal
 images: [
-  /assets/illustration/babybreathe.jpg,
-  /assets/illustration/brave.jpg,
-  /assets/illustration/pear.jpg,
-  /assets/illustration/nope.jpg,
-  /assets/illustration/onionknight.jpg,
-  /assets/illustration/determination.jpg,
-  /assets/illustration/forzastickerlily.jpg,
-  /assets/illustration/forzastickerviolet.jpg,
-  /assets/illustration/forzastickerwin.jpg,
+  /assets/illustration/gamer.jpg,
+  /assets/illustration/mini.jpg,
+  /assets/illustration/ag.jpg,
   /assets/illustration/themoon.jpg,
   /assets/illustration/thesun.jpg,
-  /assets/illustration/sadshoeday.jpg,
-  /assets/illustration/plant1.jpg,
-  /assets/illustration/plant2.jpg,
-  /assets/illustration/plant3.jpg,
-  /assets/illustration/morning.jpg,
-  /assets/illustration/midday.jpg,
-  /assets/illustration/midnight.jpg,
-  /assets/illustration/hum.jpg,
-  /assets/illustration/eye.jpg,
+  /assets/illustration/cat.jpg,
+  /assets/illustration/babybreathe.jpg,
+  /assets/illustration/brave.jpg,
+  /assets/illustration/gladiolus.jpg,
+  /assets/illustration/sunflower.jpg,
+  /assets/illustration/apple.jpg,
+  /assets/illustration/selphieff8.jpg,
+  /assets/illustration/pothos.jpg,
+  /assets/illustration/determination.jpg
 ]
 color: accent--moss
 
-next: /forza-racing-championship
+next: /four-discs-blanket
 prev: /calm-cactus-goods
 ---
 
-Ongoing. Illustrative & style explorations.
+Collection of my most recent digital concepts across different levels of rendering. Illustrative software I usually use are Procreate & Adobe Illustrator.
