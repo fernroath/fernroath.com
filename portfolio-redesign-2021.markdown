@@ -4,6 +4,14 @@ layout: project
 client: HTML & CSS exploration / Personal
 images: [
   /assets/portfolioredesign2021/icons.jpg,
+  /assets/portfolioredesign2021/about.jpg,
+  /assets/portfolioredesign2021/leaf.jpg,
+  /assets/portfolioredesign2021/transition.jpg,
+  /assets/portfolioredesign2021/hover.jpg,
+  /assets/portfolioredesign2021/projects.jpg,
+  /assets/portfolioredesign2021/projecthighlight.jpg,
+  /assets/portfolioredesign2021/mobile.jpg,
+  /assets/portfolioredesign2021/logo.jpg,
 ]
 color: accent--dew
 

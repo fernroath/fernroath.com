@@ -1,7 +1,7 @@
 ---
 title: "Magic: the Gathering Guild Week"
 layout: project
-client: Wizards of the Coast
+client: Wizards of the Coast | 2018
 images: [
   /assets/guildweek/golgarisocial.jpg,
   /assets/guildweek/golgarilight.jpg,

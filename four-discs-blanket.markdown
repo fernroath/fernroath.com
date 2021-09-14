@@ -4,7 +4,14 @@ layout: project
 client: Summer School Collective | 2020
 images: [
   /assets/fourdiscs/fourdiscshero.jpg,
+  /assets/fourdiscs/ff8.jpg,
   /assets/fourdiscs/locationmoon.jpg,
+  /assets/fourdiscs/disc4.jpg,
+  /assets/fourdiscs/blanket.jpg,
+  /assets/fourdiscs/phantom1.jpg,
+  /assets/fourdiscs/detail1.jpg,
+  /assets/fourdiscs/moon.jpg,
+  /assets/fourdiscs/detail2.jpg,
 ]
 color: accent--four-discs
 

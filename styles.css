@@ -30,6 +30,7 @@ a:focus {
 }
 main {
   max-width: 100%;
+  overflow: hidden;
 }
 .accent--coral {
   --accent-color: #f6917f;
@@ -182,14 +183,12 @@ main {
   width: 50px;
 }
 .circle {
-  --s: -10px;
   width: 60px;
 }
 .wiggle {
   width: 70px;
 }
 .sparkle {
-  --s: -10px;
   width: 60px;
 }
 .card:nth-child(1) .sparkle {
@@ -319,6 +318,69 @@ main {
   transform: translate3d(0,0,0) rotate(30deg);
 }
 
+.about--confetti {
+  position: absolute;
+}
+.about--confetti:nth-of-type(1) {
+  right: -1.5%;
+  bottom: -2%;
+}
+.about--confetti:nth-of-type(2) {
+  bottom: 10%;
+  right: 28%;
+}
+.about--confetti:nth-of-type(3) {
+  right: 10%;
+  top: 250px;
+  transform: translate3d(0,0,0) rotate(-20deg);
+}
+.about--confetti:nth-of-type(4) {
+  right: 12%;
+  bottom: 22%;
+  transform: translate3d(0,0,0) rotate(-30deg);
+}
+.about--confetti:nth-of-type(5) {
+  right: 25%;
+  top: 120px;
+}
+.about--confetti:nth-of-type(6) {
+  bottom: 40%;
+  right: -1%;
+}
+.about--confetti:nth-of-type(7) {
+  bottom: 3%;
+  right: 45%;
+  transform: translate3d(0,0,0) rotate(30deg);
+}
+.about--confetti:nth-of-type(8) {
+  top: 200px;
+  right: -2%;
+  transform: translate3d(0,0,0) rotate(30deg);
+}
+.about--confetti:nth-of-type(9) {
+  bottom: 30%;
+  left: -2%;
+}
+.about--confetti:nth-of-type(10) {
+  top: 200px;
+  left: 2%;
+}
+.about--confetti:nth-of-type(11) {
+  top: 120px;
+  left: 20%;
+  transform: translate3d(0,0,0) rotate(50deg);
+}
+.about--confetti:nth-of-type(12) {
+  bottom: -1.5%;
+  left: 20%;
+  transform: translate3d(0,0,0) rotate(-60deg);
+}
+.about--confetti:nth-of-type(13) {
+  top: 250px;
+  left: 30%;
+  transform: translate3d(0,0,0) rotate(10deg);
+}
+
 .contact {
   margin: 35px 0;
 }
@@ -376,9 +438,47 @@ main {
   padding-top: 100px;
 }
 
+.gallery--confetti {
+  position: absolute;
+  z-index: 1;
+}
+.gallery--confetti:nth-of-type(1) {
+  bottom: 80px;
+  right: -1.5%;
+}
+.gallery--confetti:nth-of-type(2) {
+  bottom: 35px;
+  right: 16%;
+}
+.gallery--confetti:nth-of-type(3) {
+  display: none;
+  bottom: 30px;
+  right: 4%;
+  transform: translate3d(0,0,0) rotate(-40deg);
+}
+.gallery--confetti:nth-of-type(4) {
+  display: none;
+  bottom: 100px;
+  right: 11%;
+  transform: translate3d(0,0,0) rotate(30deg);
+}
+
+@media (min-width: 700px) {
+  .gallery--confetti:nth-of-type(3) {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery--confetti:nth-of-type(4) {
+    display: block;
+  }
+}
+@media (min-width: 2000px) {
+}
+
 .pane {
   clip-path: url(#curtain1);
-  padding-bottom: 10vw;
+  padding-bottom: 160px;
 }
 .pane--content {
   display: flex;
