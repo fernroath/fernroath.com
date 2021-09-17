@@ -2,41 +2,159 @@
 layout: default
 ---
 
-<main class="gallery-view box">
-  <div class="projects">
-    <div class="projects-grid">
-      {% for project in page.projects %}
-      <a href="{{ project.link }}" class="card {{ project.color }}">
-        <div class="card--image">
-          <img src="{{ project.hero }}" />
-        </div>
-        <p class="card--title">{{ project.title }}</p>
-        <p class="card--client">{{ project.client }}</p>
-        <p class="card--description">{{ project.description }}</p>
-        <svg class="card--confetti circle" viewBox="0 0 300 300">
-          <use xlink:href="#circle" />
-        </svg>
-        <svg class="card--confetti wiggle" viewBox="0 0 300 300">
-          <use xlink:href="#wiggle" />
-        </svg>
-        <svg class="card--confetti square" viewBox="0 0 300 300">
-          <use xlink:href="#square" />
-        </svg>
-      </a>
-      {% endfor %}
+{% include nav.html class="grad-bg" %}
+
+<main>
+  <div class="pane about-view">
+    <div class="pane--content">
+      <div class="about--content box">
+        <h1>Hi, I’m Fern</h1>
+
+        <p>I’m a designer located in the Greater Seattle area.</p>
+
+        <p> I've worked primarily in the gaming industry focusing on customer engagment and eSports related projects. I've had the pleasure of working on a bit of everything from advertising, web design, UI/UX design and in-person & virtual gaming events.</p>
+
+        <p>I like gardening, motorcycles & JRPGs. I’m a big fan of Caroline Polachek, Galarian Slowking & my two cats.
+        </p>
+      </div>
+
+      <svg class="about--confetti circle" viewBox="0 0 300 300">
+        <use xlink:href="#circle" />
+      </svg>
+      <svg class="about--confetti sparkle" viewBox="0 0 300 300">
+        <use xlink:href="#sparkle" />
+      </svg>
+      <svg class="about--confetti wiggle" viewBox="0 0 300 300">
+        <use xlink:href="#wiggle" />
+      </svg>
+      <svg class="about--confetti square" viewBox="0 0 300 300">
+        <use xlink:href="#square" />
+      </svg>
+      <svg class="about--confetti circle" viewBox="0 0 300 300">
+        <use xlink:href="#circle" />
+      </svg>
+      <svg class="about--confetti sparkle" viewBox="0 0 300 300">
+        <use xlink:href="#sparkle" />
+      </svg>
+      <svg class="about--confetti wiggle" viewBox="0 0 300 300">
+        <use xlink:href="#wiggle" />
+      </svg>
+      <svg class="about--confetti square" viewBox="0 0 300 300">
+        <use xlink:href="#square" />
+      </svg>
+      <svg class="about--confetti circle" viewBox="0 0 300 300">
+        <use xlink:href="#circle" />
+      </svg>
+      <svg class="about--confetti sparkle" viewBox="0 0 300 300">
+        <use xlink:href="#sparkle" />
+      </svg>
+      <svg class="about--confetti wiggle" viewBox="0 0 300 300">
+        <use xlink:href="#wiggle" />
+      </svg>
+      <svg class="about--confetti square" viewBox="0 0 300 300">
+        <use xlink:href="#square" />
+      </svg>
+      <svg class="about--confetti square" viewBox="0 0 300 300">
+        <use xlink:href="#square" />
+      </svg>
+
+      {% include contact.html class="box" barClass="chai--fill" %}
     </div>
   </div>
 
-  <div class="contact">
-    <div class="rectangle fill--texture"></div>
-    <div>
-      <p class="card--bold">Say Hello</p>
-      <p class="card--email">
-        <a href="mailto:{{ site.email }}" target="_blank"> {{ site.email }} </a>
-      </p>
-      <a href="/assets/fernroath_resume_2021.pdf" target="_blank">
-        <p class="card--bold">Full Resume</p>
-      </a>
+  <div class="gallery-view">
+    <div class="gallery-content projects box">
+      <div class="projects-grid">
+        {% for project in page.projects %}
+        <a href="{{ project.link }}" class="card {{ project.color }}">
+          <svg class="card--confetti circle" viewBox="0 0 300 300">
+            <use xlink:href="#circle" />
+          </svg>
+          <svg class="card--confetti wiggle" viewBox="0 0 300 300">
+            <use xlink:href="#wiggle" />
+          </svg>
+          <svg class="card--confetti square" viewBox="0 0 300 300">
+            <use xlink:href="#square" />
+          </svg>
+          <svg class="card--confetti sparkle" viewBox="0 0 300 300">
+            <use xlink:href="#sparkle" />
+          </svg>
+          <div class="card--image">
+            <img src="{{ project.hero }}" />
+          </div>
+          <div class="card--content">
+            <p class="card--title">{{ project.title }}</p>
+            <p class="card--client">{{ project.client }}</p>
+            <p class="card--description">{{ project.description }}</p>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
     </div>
+      <svg class="gallery--confetti circle" viewBox="0 0 300 300">
+        <use xlink:href="#circle" />
+      </svg>
+      <svg class="gallery--confetti sparkle" viewBox="0 0 300 300">
+        <use xlink:href="#sparkle" />
+      </svg>
+      <svg class="gallery--confetti wiggle" viewBox="0 0 300 300">
+        <use xlink:href="#wiggle" />
+      </svg>
+      <svg class="gallery--confetti square" viewBox="0 0 300 300">
+        <use xlink:href="#square" />
+      </svg>
+
+    {% include contact.html class="box" barClass="accent--fill" %}
   </div>
 </main>
+
+<script>
+  const watchCardIntersections = () => {
+    if (window.innerWidth < 700) {
+      const HOVER_CLASS = 'hover'
+
+      const observer = new IntersectionObserver(
+        entries => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add(HOVER_CLASS)
+            } else {
+              entry.target.classList.remove(HOVER_CLASS)
+            }
+          }
+        },
+        {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.85,
+        }
+      )
+
+      const cardList = document.querySelectorAll('.card')
+      for (const card of cardList) {
+        observer.observe(card)
+      }
+
+      return () => {
+        observer.disconnect()
+        for (const card of cardList) {
+          if (card) {
+            card.classList.remove(HOVER_CLASS)
+          }
+        }
+      }
+    }
+  }
+
+  let callback
+  window.addEventListener(
+    'resize',
+    () => {
+      if (typeof callback === 'function') {
+        callback()
+      }
+      callback = watchCardIntersections()
+    },
+    { passive: true }
+  )
+</script>
