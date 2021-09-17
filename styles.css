@@ -456,7 +456,7 @@ main {
     bottom: 3%;
     right: 45%;
     left: unset;
-    transform: translate3d(0,0,0) rotate(30deg);
+    transform: translate3d(0,0,0) rotate(10deg);
   }
   .about--confetti:nth-of-type(8) {
     display: block;
@@ -472,9 +472,17 @@ main {
     top: 200px;
     left: 2%;
   }
-  .about--confetti:nth-of-type(11),
+  .about--confetti:nth-of-type(11) {
+    display: block;
+    top: 120px;
+    left: 20%;
+    transform: translate3d(0,0,0) rotate(40deg);
+  }
   .about--confetti:nth-of-type(13) {
     display: block;
+    top: 200px;
+    left: 40%;
+    transform: translate3d(0,0,0) rotate(60deg);
   }
 }
 
