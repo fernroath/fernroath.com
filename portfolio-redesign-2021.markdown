@@ -19,7 +19,6 @@ next: /illustration
 prev: /calm-cactus-goods
 ---
 
-Suprise!
 
 Every good designer needs a portfolio that refeclts their client work and themselves. I've had trouble finding layouts and styles that really fit me and my work, so I set out to design and code my own useing HTML & CSS + a little JavaScript.
 
