@@ -1,12 +1,16 @@
 <div class="contact {{ include.class }}">
-  <div class="rectangle {{ include.barClass }}"></div>
+
+  <svg class="contact--wiggle accent--text {{include.barClass}}" viewBox="0 0 300 300">
+    <use xlink:href="#wiggle" />
+  </svg>
+
   <div>
-    <p class="card--bold">Say Hello</p>
+    <h2 class="card--bold crimson-style-20">Say Hello</h2>
     <p class="card--email">
       <a href="mailto:{{ site.email }}" target="_blank"> {{ site.email }} </a>
     </p>
     <a href="/assets/fernroath_resume_2021.pdf" target="_blank">
-      <p class="card--bold">Full Resume</p>
+      <h2 class="card--bold crimson-style-20">Full Resume</h2>
     </a>
   </div>
 </div>

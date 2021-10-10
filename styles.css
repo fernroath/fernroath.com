@@ -8,10 +8,6 @@ body {
   min-height: 100vh;
   cursor: url(/assets/cursor/black.png) 36 36, auto;
 }
-h1 {
-  font-size: 30px;
-}
-h1,
 p {
   margin: 0;
 }
@@ -32,6 +28,25 @@ main {
   max-width: 100%;
   overflow: hidden;
 }
+.crimson-style-35 {
+  font-family: Crimson-Text;
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0;
+}
+.crimson-style-20 {
+  font-family: Crimson-Text;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+.portfolio-title {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
 .accent--coral {
   --accent-color: #f6917f;
   --accent-text: #94301f;
@@ -80,17 +95,14 @@ main {
   --accent-text: #D9A122;
   cursor: url(/assets/cursor/mustard-gold.png) 36 36, auto;
 }
-.accent--fill {
-  background-color: var(--accent-color);
+.accent--text {
+  color: var(--accent-color);
 }
-.chai--fill {
-  background-color: #F2F0EB;
+.chai--text {
+  color: #F2F0EB;
 }
-.rectangle {
-  width: 35px;
-  height: 5px;
-  border-radius: 5px;
-  margin-bottom: 10px;
+.contact--wiggle {
+  width: 40px;
 }
 
 .box {
@@ -135,16 +147,20 @@ main {
   flex-grow: 1;
 }
 .card--title {
-  font-family: Roboto, sans-serif;
+  font-family: Crimson-Text;
+  font-weight: 600;
   font-size: 20px;
-  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
 }
 .card--client {
+  font-family: Roboto Slab;
+  font-weight: 300;
   padding: 5px 0 0 0;
   color: #0600bb;
 }
 .card--description {
-  font-family: Roboto Slab, serif;
+  font-family: Roboto;
   padding-top: 8px;
 }
 .card--description p {
@@ -404,6 +420,7 @@ main {
 .about--confetti:nth-of-type(13) {
   display: none;
 }
+
 /* TABLET STYLES */
 @media (min-width: 700px) {
   .about--confetti:nth-of-type(2) {
@@ -429,6 +446,12 @@ main {
     right: 10%;
     bottom: 10%;
     transform: translate3d(0,0,0) rotate(-30deg);
+  }
+}
+/* BELOW DESKTOP*/
+@media (max-width: 1199px) {
+  .portfolio-title {
+    margin-top: 55px;
   }
 }
 /* DESKTOP STYLES */
@@ -515,6 +538,7 @@ main {
 .icon {
   width: 45px;
 }
+
 .about-view,
 .gallery-view {
   position: relative;
@@ -629,7 +653,7 @@ main {
     clip-path: url(#curtain2);
   }
   .gallery-content {
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .projects-grid {
     grid-template-columns: 1fr 1fr;
@@ -664,7 +688,7 @@ main {
     width: 100%;
   }
   .gallery-content {
-    padding-top: 200px;
+    padding-top: 70px;
   }
   .projects-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
