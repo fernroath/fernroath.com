@@ -7,11 +7,11 @@ layout: default
 <main class="project-view box">
   <div class="sidebar">
     <div class="sidebar-nav">
-      <p class="card--title">{{ page.title }}</p>
+      <p class="card--title crimson-style-20">{{ page.title }}</p>
       <p class="card--client">{{ page.client }}</p>
       <div class="card--description">{{ content }}</div>
     </div>
-    {% include contact.html barClass="accent--fill" %}
+    {% include contact.html barClass="accent--text" %}
   </div>
   <div class="content">
     <div class="image-grid">
@@ -19,7 +19,7 @@ layout: default
       <div><img src="{{ item }}" alt="" /></div>
       {% endfor %}
     </div>
-    <div class="project--nav">
+    <div class="project--nav crimson-style-20">
       <a href="{{ page.prev }}">&larr; Previous</a>
       <a href="{{ page.next }}">Next &rarr;</a>
     </div>

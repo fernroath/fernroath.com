@@ -29,5 +29,10 @@ Forza Racing Championship is the exclusive e-Sports competition of Turn 10 Studi
 
 In 2019, our team had the task to give Forza Racing Championship an overall brand, broadcasting and visual refresh. We touched social media platforms, provided visually appealing assets for our content creators on Twitch and took pleasure in spearheading the design for the event’s Finals in partnership with Lamborghini.
 
-My role revolved around overall exploration for brand and production polish. Duties included pre-press and file prep for external teams to print and use for event set-up during a tight timeframe. I conceptualized the visual direction and design research for a fresh and new look for competitive e-Sport racing
+My role revolved around overall exploration for brand and production polish. Duties included pre-press and file prep for external teams to print and use for event set-up during a tight timeframe. I conceptualized the visual direction and design research for a fresh and new look for competitive e-Sport racing.
 
+~
+
+Branding, social, event design, visual/digital design - Adobe CC
+
+TEAM: Ian&nbsp;Yarwood-Lovett, Ryan&nbsp;Deyo, Danny&nbsp;Ngan, Fern&nbsp;Roath & Sammi&nbsp;Sexton

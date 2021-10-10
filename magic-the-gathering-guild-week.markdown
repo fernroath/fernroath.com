@@ -22,3 +22,9 @@ prev: /forza-racing-championship
 For the launch of the Magic: The Gathering set, Guilds of Ravnica, I helped create a set of visuals to provide both advertisement on social media platforms and also for players to show support their favorite guild. This involved making  set of 10 key arts, painting and even adding to existing artwork digitally and then expanding into over 300 digital assets that would span from social media icons to full blown high res wallpapers.
 
 My role was focused on creation of all the key-arts and deliverables under the guidance of Creative Director and Art Director.
+
+~
+
+Social, visual/digital design, marketing design - Adobe CC
+
+TEAM: Tom&nbsp;Jenkot, Elsa&nbsp;Monnier, Anne&nbsp;Hendricks & Fern&nbsp;Roath
