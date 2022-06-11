@@ -6,7 +6,7 @@ images: [
   /assets/illustration/postage.jpg,
   /assets/illustration/glassflowers.jpg,
   /assets/illustration/everydaythings.jpg,
-  /assets/illustration/gladiolus.jpg,
+  /assets/illustration/regladiolus.jpg,
   /assets/illustration/springgarden.jpg,
   /assets/illustration/blue.jpg,
   /assets/illustration/cursecards.jpg,
