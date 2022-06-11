@@ -20,7 +20,7 @@ images: [
   /assets/illustration/gamer.jpg,
   /assets/illustration/themoon.jpg,
   /assets/illustration/thesun.jpg,
-  /assets/illustration/babybreathe.jpg,,
+  /assets/illustration/babybreathe.jpg,
   /assets/illustration/apple.jpg,
   /assets/illustration/selphieff8.jpg,
   /assets/illustration/pothos.jpg,
